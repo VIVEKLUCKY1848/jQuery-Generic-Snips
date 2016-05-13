@@ -36,3 +36,14 @@ $jq1(document).ready(function() {
 	});
 });
 //Open fancybox on button click end
+
+//jQuery no conflict start
+jQuery.noConflict();
+(function( $ ) {
+  $(function() {
+    // More code using $ as alias to jQuery
+  });
+})(jQuery);
+ 
+// Other code using $ as an alias to the other library
+//jQuery no conflict end
